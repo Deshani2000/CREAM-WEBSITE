@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop Golden CenVi luxury skincare cream.">
+    <title>Shop | Golden CenVi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        dark: '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white font-sans antialiased selection:bg-gold selection:text-black min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 shadow-lg bg-black/95 border-b border-gold/20" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <i class="fa-solid fa-crown text-gold text-xl"></i>
+                <span class="font-playfair text-xl tracking-wider font-bold gold-text">Golden CenVi</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center text-sm tracking-widest uppercase">
+                <a href="index.html" class="hover:text-gold transition-colors duration-300">Home</a>
+                <a href="products.html" class="text-gold transition-colors duration-300 border-b border-gold pb-1">Shop</a>
+                <a href="about.html" class="hover:text-gold transition-colors duration-300">About</a>
+                <a href="contact.html" class="hover:text-gold transition-colors duration-300">Contact</a>
+                <div class="relative group cursor-pointer">
+                    <i class="fa-solid fa-bag-shopping text-xl hover:text-gold transition-colors"></i>
+                    <span class="absolute -top-2 -right-2 bg-gold text-black text-[10px] w-4 h-4 flex items-center justify-center rounded-full font-bold">0</span>
+                </div>
+            </div>
+
+            <button class="md:hidden text-gold text-2xl" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="md:hidden hidden bg-black border-t border-white/10 absolute w-full left-0 top-full flex-col items-center py-6 space-y-6 shadow-2xl" id="mobile-menu">
+            <a href="index.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">Home</a>
+            <a href="products.html" class="text-gold tracking-widest uppercase">Shop</a>
+            <a href="about.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">About</a>
+            <a href="contact.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-12 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gold/5 to-transparent pointer-events-none"></div>
+        <h1 class="font-playfair text-4xl md:text-6xl mb-4 fade-in">The Collection</h1>
+        <div class="w-16 h-1 bg-gold mx-auto mb-4 fade-in delay-100"></div>
+        <p class="text-gray-400 max-w-xl mx-auto font-light fade-in delay-200">Our signature creation, formulated with the rarest ingredients for unprecedented radiance.</p>
+    </div>
+
+    <!-- Product Details Section -->
+    <main class="flex-grow max-w-7xl mx-auto px-6 lg:px-12 py-12 mb-20 relative z-10 w-full">
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
+            <!-- Product Images -->
+            <div class="space-y-6 fade-in delay-300">
+                <div class="glass-card rounded-2xl p-4 md:p-8 flex items-center justify-center relative overflow-hidden border-gold/30 gold-shadow">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gold/20 via-transparent to-transparent opacity-50"></div>
+                    <img id="main-image" src="images/product.png" alt="Golden CenVi Main Product Image" class="w-full max-w-md relative z-10 rounded-xl shadow-2xl transition-all duration-500 hover:scale-105">
+                </div>
+                
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="glass-card rounded-xl p-2 cursor-pointer border-gold/50 transition-all hover:-translate-y-1 thumbnail" onclick="changeImage('images/product.png')">
+                        <img src="images/product.png" alt="Product view 1" class="w-full rounded-lg h-24 object-cover">
+                    </div>
+                    <div class="glass-card rounded-xl p-2 cursor-pointer border-transparent hover:border-gold/50 transition-all hover:-translate-y-1 thumbnail" onclick="changeImage('images/texture.png')">
+                        <img src="images/texture.png" alt="Product view 2" class="w-full rounded-lg h-24 object-cover">
+                    </div>
+                    <div class="glass-card rounded-xl p-2 cursor-pointer border-transparent hover:border-gold/50 transition-all hover:-translate-y-1 thumbnail" onclick="changeImage('images/model.png')">
+                        <img src="images/model.png" alt="Product view 3" class="w-full rounded-lg h-24 object-cover focus:right">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="fade-in delay-400 flex flex-col justify-center">
+                <div class="text-gold text-sm tracking-[0.2em] uppercase mb-2">Signature Edition</div>
+                <h2 class="font-playfair text-4xl md:text-5xl mb-2">Golden CenVi</h2>
+                <h3 class="font-playfair text-2xl text-gray-400 italic mb-6">Radiance Renewal Cream</h3>
+                
+                <div class="flex items-center gap-4 mb-6 pb-6 border-b border-white/10">
+                    <span class="text-3xl font-bold font-sans">$245.00</span>
+                    <div class="flex text-gold text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span class="text-gray-400 ml-2 font-sans">(128 Reviews)</span>
+                    </div>
+                </div>
+
+                <p class="text-gray-400 font-light leading-relaxed mb-8 text-sm md:text-base">
+                    A luxurious, highly concentrated cream infused with pure 24-karat gold nano-particles and potent botanical stem cells. It actively targets signs of aging, uneven skin tone, and dehydration to reveal your skin's inner luminosity.
+                </p>
+
+                <div class="space-y-4 mb-8">
+                    <h4 class="font-bold tracking-widest text-sm uppercase">Key Benefits:</h4>
+                    <ul class="space-y-2 text-sm text-gray-300 font-light">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-gold mt-1"></i> <span class="flex-1">Deeply hydrates and locks in moisture for 48 hours</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-gold mt-1"></i> <span class="flex-1">Smooths fine lines and restores skin elasticity</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-gold mt-1"></i> <span class="flex-1">Imparts an immediate, radiant golden glow</span></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <div class="flex items-center border border-white/20 rounded-full w-full sm:w-32 bg-black/50">
+                        <button class="px-4 py-3 text-gold hover:text-white transition-colors" onclick="updateQty(-1)"><i class="fa-solid fa-minus text-xs"></i></button>
+                        <input type="text" id="qty" value="1" class="w-full bg-transparent text-center font-bold outline-none text-white pointer-events-none">
+                        <button class="px-4 py-3 text-gold hover:text-white transition-colors" onclick="updateQty(1)"><i class="fa-solid fa-plus text-xs"></i></button>
+                    </div>
+                    <button class="button-gold flex-1 py-4 rounded-full uppercase tracking-widest text-sm font-bold shadow-[0_0_20px_rgba(212,175,55,0.3)] flex justify-center items-center gap-2 group transition-all" onclick="addToCart()">
+                        <span>Add To Bag</span>
+                        <i class="fa-solid fa-bag-shopping group-hover:-translate-y-1 transition-transform"></i>
+                    </button>
+                </div>
+
+                <div class="text-xs text-gray-500 flex flex-col sm:flex-row gap-6 border-t border-white/10 pt-6">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-truck text-lg text-gray-400"></i> Free worldwide shipping</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-seedling text-lg text-gray-400"></i> 100% Cruelty Free</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-arrow-rotate-left text-lg text-gray-400"></i> 30-Day Returns</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details Tabs -->
+        <div class="mt-24 border border-white/10 rounded-2xl overflow-hidden glass-card">
+            <div class="flex border-b border-white/10 text-sm tracking-widest uppercase font-bold overflow-x-auto">
+                <button class="flex-1 py-6 px-4 bg-white/5 border-b-2 border-gold text-gold transition-colors whitespace-nowrap">Description</button>
+                <button class="flex-1 py-6 px-4 hover:bg-white/5 hover:text-gold transition-colors text-gray-400 border-b-2 border-transparent whitespace-nowrap">Ingredients</button>
+                <button class="flex-1 py-6 px-4 hover:bg-white/5 hover:text-gold transition-colors text-gray-400 border-b-2 border-transparent whitespace-nowrap">How To Use</button>
+            </div>
+            <div class="p-8 md:p-12 text-gray-400 font-light leading-relaxed text-sm md:text-base bg-black/40">
+                <p>
+                    Embark on a journey of transformative skincare with Golden CenVi. Crafted by world-renowned dermatologists, this cream fuses the timeless healing properties of gold with modern scientific advancements. The rich, non-greasy formula absorbs quickly, delivering active nutrients deep into the dermal layer. From the moment it touches your skin, you will feel a velvety softness, followed by an unmistakable radiance that lasts all day. Elevate your daily routine to a ritual of luxury.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-16 pb-10 border-t border-white/10 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fa-solid fa-crown text-gold"></i>
+                <span class="font-playfair tracking-wider font-bold gold-text">Golden CenVi</span>
+            </a>
+            <p class="text-xs text-gray-600">&copy; 2026 Golden CenVi. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+
+        // Image Gallery Swapper
+        function changeImage(src) {
+            document.getElementById('main-image').src = src;
+            
+            // Update active state of thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => {
+                thumb.classList.remove('border-gold/50');
+                thumb.classList.add('border-transparent');
+                
+                if(thumb.querySelector('img').src.includes(src)) {
+                    thumb.classList.remove('border-transparent');
+                    thumb.classList.add('border-gold/50');
+                }
+            });
+        }
+
+        // Qty Update
+        function updateQty(change) {
+            const input = document.getElementById('qty');
+            let val = parseInt(input.value) + change;
+            if(val >= 1 && val <= 10) {
+                input.value = val;
+            }
+        }
+
+        // Add to cart dummy animation
+        function addToCart() {
+            const btn = document.querySelector('.button-gold span');
+            const originalText = btn.innerText;
+            btn.innerText = "Added!";
+            setTimeout(() => {
+                btn.innerText = originalText;
+                // Update badge
+                const badge = document.querySelector('.fa-bag-shopping + span');
+                let count = parseInt(badge.innerText);
+                badge.innerText = count + parseInt(document.getElementById('qty').value);
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

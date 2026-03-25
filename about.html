@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The story behind Golden CenVi luxury skincare.">
+    <title>Our Story | Golden CenVi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        dark: '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white font-sans antialiased selection:bg-gold selection:text-black min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 shadow-lg bg-black/95 border-b border-gold/20" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <i class="fa-solid fa-crown text-gold text-xl"></i>
+                <span class="font-playfair text-xl tracking-wider font-bold gold-text">Golden CenVi</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center text-sm tracking-widest uppercase">
+                <a href="index.html" class="hover:text-gold transition-colors duration-300">Home</a>
+                <a href="products.html" class="hover:text-gold transition-colors duration-300">Shop</a>
+                <a href="about.html" class="text-gold transition-colors duration-300 border-b border-gold pb-1">About</a>
+                <a href="contact.html" class="hover:text-gold transition-colors duration-300">Contact</a>
+            </div>
+
+            <button class="md:hidden text-gold text-2xl" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="md:hidden hidden bg-black border-t border-white/10 absolute w-full left-0 top-full flex-col items-center py-6 space-y-6 shadow-2xl" id="mobile-menu">
+            <a href="index.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">Home</a>
+            <a href="products.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">Shop</a>
+            <a href="about.html" class="text-gold tracking-widest uppercase">About</a>
+            <a href="contact.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-20 relative overflow-hidden bg-[url('images/texture.png')] bg-cover bg-center bg-no-repeat bg-fixed">
+        <div class="absolute inset-0 bg-black/80"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 py-16">
+            <h1 class="font-playfair text-5xl md:text-7xl mb-6 fade-in text-white">The Legacy of <br><span class="gold-text">Purity</span></h1>
+            <p class="text-gray-300 font-light text-lg md:text-xl leading-relaxed fade-in delay-200">
+                Born from a desire to merge royal ancient rituals with cutting-edge dermatological science.
+            </p>
+        </div>
+    </header>
+
+    <!-- Story Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-6 lg:px-12 py-24 mb-10 w-full text-center md:text-left">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="fade-in order-2 md:order-1 relative p-4 glass-card rounded-3xl border border-gold/30">
+                <div class="absolute -inset-2 bg-gradient-to-tr from-gold/20 to-transparent blur-2xl opacity-50 z-0"></div>
+                <img src="images/model.png" alt="Our Heritage" class="w-full h-auto rounded-2xl relative z-10 shadow-[0_0_40px_rgba(212,175,55,0.15)] object-cover">
+            </div>
+            
+            <div class="fade-in delay-200 order-1 md:order-2 space-y-8">
+                <h2 class="text-gold text-sm tracking-[0.3em] uppercase">Our Origin</h2>
+                <h3 class="font-playfair text-4xl leading-snug">
+                    "True beauty is not just seen; it is deeply felt."
+                </h3>
+                <div class="w-20 h-[1px] bg-gold mx-auto md:mx-0"></div>
+                <p class="text-gray-400 font-light leading-relaxed">
+                    Golden CenVi was founded on a simple yet profound philosophy: your skin deserves the same care reserved for royalty. We spent years researching ancient texts describing the skincare rituals of past empires, specifically the use of pure gold to maintain eternal youth and a brilliant complexion.
+                </p>
+                <p class="text-gray-400 font-light leading-relaxed">
+                    After a decade of rigorous scientific trials in Switzerland, our experts successfully combined 24-karat gold nanoparticles with highly active botanical stem cells. The result was a formula so potent, so deeply absorbent, that it transformed the industry overnight.
+                </p>
+            </div>
+        </div>
+
+        <!-- Vision/Values -->
+        <div class="mt-32 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div class="glass-card p-10 rounded-2xl border border-white/10 hover:border-gold/50 transition-all duration-300 fade-in delay-100 group">
+                <div class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors border border-gold/30">
+                    <i class="fa-solid fa-leaf text-gold text-2xl"></i>
+                </div>
+                <h4 class="font-playfair text-2xl mb-4">Ethical Sourcing</h4>
+                <p class="text-gray-400 font-light text-sm">Every botanical ingredient is sustainably harvested, ensuring zero harm to our delicate ecosystems and supporting fair trade.</p>
+            </div>
+            
+            <div class="glass-card p-10 rounded-2xl border border-white/10 hover:border-gold/50 transition-all duration-300 fade-in delay-200 group">
+                <div class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors border border-gold/30">
+                    <i class="fa-solid fa-flask text-gold text-2xl"></i>
+                </div>
+                <h4 class="font-playfair text-2xl mb-4">Clinical Science</h4>
+                <p class="text-gray-400 font-light text-sm">Not just aesthetics. Our cream undergoes rigorous dermatological testing to ensure maximum efficacy without irritation.</p>
+            </div>
+            
+            <div class="glass-card p-10 rounded-2xl border border-white/10 hover:border-gold/50 transition-all duration-300 fade-in delay-300 group">
+                <div class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors border border-gold/30">
+                    <i class="fa-solid fa-gem text-gold text-2xl"></i>
+                </div>
+                <h4 class="font-playfair text-2xl mb-4">Unmatched Luxury</h4>
+                <p class="text-gray-400 font-light text-sm">From the weight of the jar to the subtle signature scent, every detail is engineered to provide an unparalleled sensory experience.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-16 pb-10 border-t border-white/10 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fa-solid fa-crown text-gold"></i>
+                <span class="font-playfair tracking-wider font-bold gold-text">Golden CenVi</span>
+            </a>
+            <p class="text-xs text-gray-600">&copy; 2026 Golden CenVi. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+</body>
+</html>

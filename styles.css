@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #0A0A0A;
+    color: #F8F8F8;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.gold-text {
+    background: linear-gradient(to right, #D4AF37, #FFDF4A, #D4AF37);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #FFDF4A 50%, #B8860B 100%);
+}
+
+.border-gold {
+    border-color: #D4AF37;
+}
+
+.button-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #FFDF4A 50%, #B8860B 100%);
+    color: #0A0A0A;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-gold:hover {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
+}
+
+.glass-nav {
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-card {
+    background: rgba(25, 25, 25, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.15);
+    border-color: #D4AF37;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUpFade 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+
+@keyframes slideUpFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #B8860B;
+}
+
+/* Hero Zoom Effect */
+.hero-img-container {
+    overflow: hidden;
+}
+.hero-img-container img {
+    transition: transform 10s ease;
+}
+.hero-img-container:hover img {
+    transform: scale(1.05);
+}

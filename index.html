@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golden CenVi - Experience the art of timeless glowing skin with our premium, luxurious skincare cream.">
+    <title>Golden CenVi | Premium Luxury Skincare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        dark: '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white font-sans antialiased selection:bg-gold selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fa-solid fa-crown text-gold text-2xl"></i>
+                <span class="font-playfair text-2xl tracking-wider font-bold gold-text">Golden CenVi</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center text-sm tracking-widest uppercase">
+                <a href="index.html" class="hover:text-gold transition-colors duration-300 text-gold">Home</a>
+                <a href="products.html" class="hover:text-gold transition-colors duration-300">Shop</a>
+                <a href="about.html" class="hover:text-gold transition-colors duration-300">About</a>
+                <a href="contact.html" class="hover:text-gold transition-colors duration-300">Contact</a>
+                <a href="products.html" class="button-gold px-6 py-2 rounded-full cursor-pointer hover:shadow-lg">Buy Now</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-gold text-2xl" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-black/95 absolute w-full left-0 top-full flex-col items-center py-6 space-y-6 border-b border-gold/20" id="mobile-menu">
+            <a href="index.html" class="text-gold tracking-widest uppercase">Home</a>
+            <a href="products.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">Shop</a>
+            <a href="about.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">About</a>
+            <a href="contact.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">Contact</a>
+            <a href="products.html" class="button-gold px-8 py-3 rounded-full uppercase tracking-widest text-sm">Buy Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gold opacity-10 blur-[150px] rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-yellow-600 opacity-10 blur-[150px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="fade-in space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 text-sm uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+                    <span class="text-gold">New Arrival</span>
+                </div>
+                <h1 class="font-playfair text-5xl md:text-7xl leading-tight">
+                    Reveal Your <br/>
+                    <span class="gold-text italic">Timeless Radiance</span>
+                </h1>
+                <p class="text-gray-400 text-lg max-w-md font-light leading-relaxed">
+                    Experience the pinnacle of luxury skincare. Golden CenVi is meticulously crafted with rare golden extracts to rejuvenate, hydrate, and illuminate your skin.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="products.html" class="button-gold px-8 py-4 rounded-full uppercase tracking-widest text-sm inline-flex items-center gap-2">
+                        Discover More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#benefits" class="px-8 py-4 rounded-full uppercase tracking-widest text-sm border border-white/20 hover:border-gold hover:text-gold transition-all duration-300">
+                        View Benefits
+                    </a>
+                </div>
+                
+                <div class="pt-8 flex items-center gap-6 border-t border-white/10 mt-12">
+                    <div class="flex -space-x-3">
+                        <img src="https://i.pravatar.cc/100?img=1" class="w-10 h-10 rounded-full border-2 border-dark" alt="User">
+                        <img src="https://i.pravatar.cc/100?img=2" class="w-10 h-10 rounded-full border-2 border-dark" alt="User">
+                        <img src="https://i.pravatar.cc/100?img=3" class="w-10 h-10 rounded-full border-2 border-dark" alt="User">
+                        <div class="w-10 h-10 rounded-full border-2 border-dark bg-gold flex items-center justify-center text-black text-xs font-bold">+2k</div>
+                    </div>
+                    <div>
+                        <div class="flex text-gold text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Loved by 2,000+ women</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fade-in delay-200 relative hero-img-container rounded-2xl overflow-hidden shadow-2xl border border-gold/20">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 pointer-events-none"></div>
+                <img src="images/model.png" alt="Luxury Skincare Model" class="w-full h-[600px] object-cover object-center">
+                <div class="absolute bottom-6 left-6 z-20 glass-card p-4 rounded-xl flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center border border-gold/50">
+                        <i class="fa-solid fa-droplet text-gold"></i>
+                    </div>
+                    <div>
+                        <p class="font-bold text-white text-sm">24K Gold Particles</p>
+                        <p class="text-xs text-gray-400">Deep cellular hydration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Cloud -->
+    <section class="py-12 border-y border-white/5 bg-black/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+            <p class="text-gray-500 text-sm uppercase tracking-widest mb-8">Featured In</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                <i class="fa-brands fa-vogue text-4xl hover:text-white transition-colors"></i>
+                <i class="fa-brands fa-elle text-4xl hover:text-white transition-colors"></i>
+                <i class="fa-solid fa-leaf text-3xl hover:text-white transition-colors"></i><span class="font-playfair text-xl">Allure</span>
+                <span class="font-playfair text-2xl font-bold tracking-widest">BAZAAR</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Product Section -->
+    <section class="py-24" id="discover">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="fade-in order-2 md:order-1 relative rounded-2xl border border-gold/20 p-2">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-gold/30 to-yellow-600/30 blur opacity-30"></div>
+                    <img src="images/product.png" alt="Golden CenVi Cream Jar" class="w-full rounded-xl relative z-10 block shadow-2xl">
+                </div>
+                
+                <div class="fade-in delay-200 order-1 md:order-2">
+                    <h2 class="font-playfair text-4xl md:text-5xl mb-6">The Golden Standard of beauty.</h2>
+                    <p class="text-gray-400 mb-8 font-light leading-relaxed">
+                        Infused with 24-karat gold flakes, botanical stem cells, and cutting-edge peptides, the Golden CenVi cream promises skin transformation. Say goodbye to dullness and welcome an eternal glow.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gold"></i>
+                            <span class="text-sm font-light">Instantly restores skin elasticity</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gold"></i>
+                            <span class="text-sm font-light">Visibly reduces fine lines and wrinkles</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-gold"></i>
+                            <span class="text-sm font-light">Provides 48-hour deep locking hydration</span>
+                        </li>
+                    </ul>
+                    <a href="products.html" class="button-gold px-8 py-4 rounded-full uppercase tracking-widest text-sm inline-block">
+                        Shop The Cream
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Texture Showcase -->
+    <section class="py-24 bg-black/80 relative border-t border-white/5" id="benefits">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center mb-16">
+            <h2 class="font-playfair text-4xl md:text-5xl mb-4">Divine Texture</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+            <p class="text-gray-400 max-w-2xl mx-auto font-light">Experience the rich, velvety feel that melts effortlessly into your skin, leaving a subtle golden luminescence.</p>
+        </div>
+        
+        <div class="max-w-5xl mx-auto px-6 lg:px-12">
+            <div class="relative rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(212,175,55,0.15)] border border-gold/30">
+                <img src="images/texture.png" alt="Cream Texture Showcase" class="w-full h-[500px] object-cover transition-transform duration-1000 hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8 md:p-12 pointer-events-none">
+                    <div>
+                        <h3 class="font-playfair text-2xl md:text-3xl text-white mb-2">Silky. Absorbing. Radiant.</h3>
+                        <p class="text-gray-300 font-light text-sm md:text-base max-w-xl">Formulated without parabens, sulfates, or phthalates. Pure nature combined with golden science.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-20 pb-10 border-t border-white/10 mt-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[300px] h-[300px] bg-gold opacity-5 blur-[150px] rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <i class="fa-solid fa-crown text-gold text-2xl"></i>
+                    <span class="font-playfair text-2xl tracking-wider font-bold gold-text">Golden CenVi</span>
+                </a>
+                <p class="text-gray-500 text-sm font-light leading-relaxed mb-6">
+                    Elevating skincare to an art form. Embrace the luxury your skin deserves.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-gold hover:text-gold transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-playfair text-lg mb-6 tracking-wider">Quick Links</h4>
+                <ul class="space-y-4 text-sm text-gray-400 font-light">
+                    <li><a href="index.html" class="hover:text-gold transition-colors">Home</a></li>
+                    <li><a href="products.html" class="hover:text-gold transition-colors">Shop Collection</a></li>
+                    <li><a href="about.html" class="hover:text-gold transition-colors">Our Story</a></li>
+                    <li><a href="contact.html" class="hover:text-gold transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="font-playfair text-lg mb-6 tracking-wider">Legal</h4>
+                <ul class="space-y-4 text-sm text-gray-400 font-light">
+                    <li><a href="#" class="hover:text-gold transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-gold transition-colors">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-gold transition-colors">Shipping Policy</a></li>
+                    <li><a href="#" class="hover:text-gold transition-colors">Refunds & Returns</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-playfair text-lg mb-6 tracking-wider">Newsletter</h4>
+                <p class="text-sm text-gray-400 font-light mb-4">Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form class="flex border border-white/20 rounded-full p-1 focus-within:border-gold transition-colors">
+                    <input type="email" placeholder="Your email" class="bg-transparent w-full text-sm outline-none px-4 text-white">
+                    <button type="button" class="bg-gold text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-yellow-500 transition-colors">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-gray-600">&copy; 2026 Golden CenVi. All rights reserved.</p>
+            <div class="flex items-center gap-2 text-gold">
+                <i class="fa-brands fa-cc-visa text-xl"></i>
+                <i class="fa-brands fa-cc-mastercard text-xl"></i>
+                <i class="fa-brands fa-cc-paypal text-xl"></i>
+                <i class="fa-brands fa-cc-apple-pay text-xl"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg', 'bg-black/95');
+                nav.classList.remove('glass-nav');
+            } else {
+                nav.classList.remove('shadow-lg', 'bg-black/95');
+                nav.classList.add('glass-nav');
+            }
+        });
+
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+</body>
+</html>

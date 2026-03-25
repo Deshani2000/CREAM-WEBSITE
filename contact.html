@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Golden CenVi - We're here to answer any questions about our luxury skincare.">
+    <title>Contact Us | Golden CenVi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        dark: '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white font-sans antialiased selection:bg-gold selection:text-black min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 shadow-lg bg-black/95 border-b border-gold/20" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <i class="fa-solid fa-crown text-gold text-xl"></i>
+                <span class="font-playfair text-xl tracking-wider font-bold gold-text">Golden CenVi</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center text-sm tracking-widest uppercase">
+                <a href="index.html" class="hover:text-gold transition-colors duration-300">Home</a>
+                <a href="products.html" class="hover:text-gold transition-colors duration-300">Shop</a>
+                <a href="about.html" class="hover:text-gold transition-colors duration-300">About</a>
+                <a href="contact.html" class="text-gold transition-colors duration-300 border-b border-gold pb-1">Contact</a>
+            </div>
+
+            <button class="md:hidden text-gold text-2xl" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="md:hidden hidden bg-black border-t border-white/10 absolute w-full left-0 top-full flex-col items-center py-6 space-y-6 shadow-2xl" id="mobile-menu">
+            <a href="index.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">Home</a>
+            <a href="products.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">Shop</a>
+            <a href="about.html" class="hover:text-gold transition-colors duration-300 tracking-widest uppercase">About</a>
+            <a href="contact.html" class="text-gold tracking-widest uppercase">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-12 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-gold/5 to-transparent pointer-events-none"></div>
+        <h1 class="font-playfair text-4xl md:text-6xl mb-4 fade-in">Get In Touch</h1>
+        <div class="w-16 h-1 bg-gold mx-auto mb-4 fade-in delay-100"></div>
+        <p class="text-gray-400 max-w-xl mx-auto font-light fade-in delay-200">Our concierge is ready to assist you regarding unparalleled luxury skincare.</p>
+    </div>
+
+    <!-- Contact Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-6 lg:px-12 py-12 mb-20 w-full relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 fade-in delay-300">
+            
+            <!-- Contact Details -->
+            <div class="space-y-12">
+                <div>
+                    <h2 class="font-playfair text-3xl mb-6">Concierge Support</h2>
+                    <p class="text-gray-400 font-light leading-relaxed mb-8">
+                        Whether you have a question about Golden CenVi, shipping inquiries, or need personalized skincare advice, our team of experts is available to help.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4 glass-card p-6 rounded-2xl border border-white/10 hover:border-gold/50 transition-colors">
+                        <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center shrink-0 border border-gold/30">
+                            <i class="fa-solid fa-envelope text-gold"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1 tracking-wider uppercase text-sm">Email Us</h3>
+                            <p class="text-gray-400 font-light text-sm mb-2">For general inquiries, returns, and order updates.</p>
+                            <a href="mailto:concierge@goldencenvi.com" class="text-gold hover:text-white transition-colors">concierge@goldencenvi.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 glass-card p-6 rounded-2xl border border-white/10 hover:border-gold/50 transition-colors">
+                        <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center shrink-0 border border-gold/30">
+                            <i class="fa-solid fa-phone text-gold"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1 tracking-wider uppercase text-sm">Call Us</h3>
+                            <p class="text-gray-400 font-light text-sm mb-2">Available Mon-Fri, 9am - 6pm EST.</p>
+                            <a href="tel:+18005550199" class="text-gold hover:text-white transition-colors">+1 (800) 555-0199</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 glass-card p-6 rounded-2xl border border-white/10 hover:border-gold/50 transition-colors">
+                        <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center shrink-0 border border-gold/30">
+                            <i class="fa-solid fa-location-dot text-gold"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1 tracking-wider uppercase text-sm">Headquarters</h3>
+                            <p class="text-gray-400 font-light text-sm mb-2">Golden CenVi Skincare,<br>785 5th Ave, New York, NY 10022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="glass-card p-8 md:p-12 rounded-3xl border border-gold/30 relative">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-gold/10 rounded-full blur-2xl pointer-events-none"></div>
+                
+                <h3 class="font-playfair text-2xl mb-8">Send a Message</h3>
+                
+                <form class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you for reaching out to Golden CenVi. A representative will contact you shortly.');">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-xs tracking-widest uppercase text-gray-400">First Name</label>
+                            <input type="text" required class="w-full bg-black/50 border border-white/20 rounded-lg px-4 py-3 outline-none focus:border-gold transition-colors text-white font-light text-sm placeholder-gray-600" placeholder="Jane">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs tracking-widest uppercase text-gray-400">Last Name</label>
+                            <input type="text" required class="w-full bg-black/50 border border-white/20 rounded-lg px-4 py-3 outline-none focus:border-gold transition-colors text-white font-light text-sm placeholder-gray-600" placeholder="Doe">
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <label class="text-xs tracking-widest uppercase text-gray-400">Email Address</label>
+                        <input type="email" required class="w-full bg-black/50 border border-white/20 rounded-lg px-4 py-3 outline-none focus:border-gold transition-colors text-white font-light text-sm placeholder-gray-600" placeholder="jane@example.com">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-xs tracking-widest uppercase text-gray-400">Subject</label>
+                        <select required class="w-full bg-black/50 border border-white/20 rounded-lg px-4 py-3 outline-none focus:border-gold transition-colors text-white font-light text-sm appearance-none cursor-pointer">
+                            <option value="">Select a topic...</option>
+                            <option value="order">Order Inquiry</option>
+                            <option value="product">Product Info</option>
+                            <option value="return">Returns / Exchanges</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-xs tracking-widest uppercase text-gray-400">Message</label>
+                        <textarea required rows="4" class="w-full bg-black/50 border border-white/20 rounded-lg px-4 py-3 outline-none focus:border-gold transition-colors text-white font-light text-sm placeholder-gray-600 resize-none" placeholder="How can we help you?"></textarea>
+                    </div>
+
+                    <button type="submit" class="button-gold w-full py-4 rounded-full uppercase tracking-widest text-sm font-bold shadow-[0_0_20px_rgba(212,175,55,0.2)] mt-4 hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-16 pb-10 border-t border-white/10 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fa-solid fa-crown text-gold"></i>
+                <span class="font-playfair tracking-wider font-bold gold-text">Golden CenVi</span>
+            </a>
+            <p class="text-xs text-gray-600">&copy; 2026 Golden CenVi. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+</body>
+</html>
